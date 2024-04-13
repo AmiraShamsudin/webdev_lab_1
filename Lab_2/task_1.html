@@ -1,21 +1,85 @@
 <!DOCTYPE html>
-<html lang=" en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <body>
-        <form action="">
-            <table>
-                <tr>
-                    <td>Name:</td>
-                    <input type="text" name="name" placeholder="Name" required><br>
-                </tr>
-               
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
 
-            </table>
-            
+<h2>Registration Form</h2>
 
-        </form>
-    </body>
-    </head>
+<form action="/submit_form" method="post">
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <td>Photo:</td>
+            <td><input type="file" name="photo"></td>
+        </tr>
+        <tr>
+            <td>Date of Birth:</td>
+            <td><input type="date" name="dob"></td>
+        </tr>
+        <tr>
+            <td>Religion:</td>
+            <td><input type="text" name="religion"></td>
+        </tr>
+        <tr>
+            <td>Race:</td>
+            <td><input type="text" name="race"></td>
+        </tr>
+        <tr>
+            <td>Address:</td>
+            <td>
+                <input type="text" name="street" placeholder="Street"><br>
+                <input type="text" name="town" placeholder="Town"><br>
+                <input type="text" name="district" placeholder="District"><br>
+                <input type="text" name="state" placeholder="State">
+            </td>
+        </tr>
+        <tr>
+            <td>Contact:</td>
+            <td>
+                <input type="tel" name="mobile" placeholder="Mobile Phone"><br>
+                <input type="text" name="social_media" placeholder="Social Media"><br>
+                <input type="url" name="website" placeholder="Website">
+            </td>
+        </tr>
+        <tr>
+            <td>Course & Institution:</td>
+            <td><input type="text" name="course_institution"></td>
+        </tr>
+        <tr>
+            <td>Programming Skills:</td>
+            <td><input type="text" name="programming_skills"></td>
+        </tr>
+        <tr>
+            <td>Personal Interest:</td>
+            <td><textarea name="personal_interest" rows="4" cols="30"></textarea></td>
+        </tr>
+        <tr>
+            <td>Plan in 2024:</td>
+            <td><textarea name="plan_2024" rows="4" cols="30"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Submit"></td>
+        </tr>
+    </table>
+</form>
+
+</body>
 </html>
